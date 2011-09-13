@@ -57,6 +57,7 @@ class Layout
 	private function _prepare($options)
 	{
 		// set view defaults
+		if ( ! isset($options['page_title']) ) $options['page_title'] = 'Codeigniter Project';
 		if ( ! isset($options['meta_desc']) ) $options['meta_desc'] = 'my meta description';
 		if ( ! isset($options['meta_author']) ) $options['meta_author'] = 'my meta author';
 
